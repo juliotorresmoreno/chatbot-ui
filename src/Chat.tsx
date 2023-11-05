@@ -21,7 +21,7 @@ export interface Message {
 
 const Chat: React.FC<ChatProps> = (props) => {
   const { icon, messages, title, userId, onChange, value, onSend } = props
-  const [isOpen, setIsOpen] = useState(true)
+  const [isOpen, setIsOpen] = useState(false)
   const chatboxRef = useRef(null)
 
   function toggleChatbox() {
