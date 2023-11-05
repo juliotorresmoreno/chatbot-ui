@@ -1,19 +1,10 @@
 #chat-component {
   & .button-container {
-    border-bottom-color: rgb(229, 231, 235);
-    border-bottom-style: solid;
-    border-bottom-width: 0px;
-    border-left-color: rgb(229, 231, 235);
-    border-left-style: solid;
-    border-left-width: 0px;
-    border-right-color: rgb(229, 231, 235);
-    border-right-style: solid;
-    border-right-width: 0px;
-    border-top-color: rgb(229, 231, 235);
-    border-top-style: solid;
-    border-top-width: 0px;
-    bottom: 0px;
+    border: 0;
+    border-color: rgb(229, 231, 235);
+    border-style: solid;
     box-sizing: border-box;
+    bottom: 0;
     display: block;
     font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
       'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif,
@@ -23,10 +14,9 @@
     font-variation-settings: normal;
     height: 40px;
     line-height: 24px;
-    margin-bottom: 16px;
-    margin-right: 16px;
+    margin: 0 16px 16px 0;
     position: fixed;
-    right: 0px;
+    right: 0;
     tab-size: 4;
   }
 
@@ -35,22 +25,10 @@
     appearance: button;
     background-color: rgb(58, 129, 246);
     background-image: none;
-    border-bottom-color: rgb(229, 231, 235);
-    border-bottom-left-radius: 6px;
-    border-bottom-right-radius: 6px;
-    border-bottom-style: solid;
-    border-bottom-width: 0px;
-    border-left-color: rgb(229, 231, 235);
-    border-left-style: solid;
-    border-left-width: 0px;
-    border-right-color: rgb(229, 231, 235);
-    border-right-style: solid;
-    border-right-width: 0px;
-    border-top-color: rgb(229, 231, 235);
-    border-top-left-radius: 6px;
-    border-top-right-radius: 6px;
-    border-top-style: solid;
-    border-top-width: 0px;
+    border-color: rgb(229, 231, 235);
+    border-radius: 6px;
+    border-style: solid;
+    border-width: 0;
     box-sizing: border-box;
     color: rgb(255, 255, 255);
     cursor: pointer;
@@ -65,54 +43,32 @@
     font-size: 16px;
     font-stretch: 100%;
     font-style: normal;
-    font-variant-alternates: normal;
-    font-variant-caps: normal;
+    font-variant: normal;
     font-variant-east-asian: normal;
-    font-variant-ligatures: normal;
-    font-variant-numeric: normal;
-    font-variant-position: normal;
     font-variation-settings: normal;
     font-weight: 400;
     height: 40px;
     letter-spacing: normal;
     line-height: 24px;
-    margin-bottom: 0px;
-    margin-left: 0px;
-    margin-right: 0px;
-    margin-top: 0px;
-    padding-bottom: 8px;
-    padding-left: 16px;
-    padding-right: 16px;
-    padding-top: 8px;
+    margin: 0;
+    padding: 8px 16px;
     tab-size: 4;
     text-align: center;
-    text-indent: 0px;
+    text-indent: 0;
     text-rendering: auto;
     text-shadow: none;
     text-transform: none;
-    transition-duration: 0.3s;
-    transition-property: color, background-color, border-color,
-      text-decoration-color, fill, stroke, opacity, box-shadow, transform,
-      filter, backdrop-filter, -webkit-backdrop-filter;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    width: 103.562px;
-    word-spacing: 0px;
+    transition: color 0.3s cubic-bezier(0.4, 0, 0.2, 1), background-color,
+      border-color, text-decoration-color, fill, stroke, opacity, box-shadow,
+      transform, filter, backdrop-filter, -webkit-backdrop-filter;
+    word-spacing: 0;
   }
 
   & #chat-container {
     box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
-    border-bottom-color: rgb(229, 231, 235);
-    border-bottom-style: solid;
-    border-bottom-width: 0px;
-    border-left-color: rgb(229, 231, 235);
-    border-left-style: solid;
-    border-left-width: 0px;
-    border-right-color: rgb(229, 231, 235);
-    border-right-style: solid;
-    border-right-width: 0px;
-    border-top-color: rgb(229, 231, 235);
-    border-top-style: solid;
-    border-top-width: 0px;
+    border-color: rgb(229, 231, 235);
+    border-style: solid;
+    border-width: 0;
     bottom: 64px;
     box-sizing: border-box;
     display: block;
@@ -138,23 +94,11 @@
   }
 
   & .chat-body {
-    background-color: rgb(255, 255, 255);
-    border-bottom-color: rgb(229, 231, 235);
-    border-bottom-left-radius: 8px;
-    border-bottom-right-radius: 8px;
-    border-bottom-style: solid;
-    border-bottom-width: 0px;
-    border-left-color: rgb(229, 231, 235);
-    border-left-style: solid;
-    border-left-width: 0px;
-    border-right-color: rgb(229, 231, 235);
-    border-right-style: solid;
-    border-right-width: 0px;
-    border-top-color: rgb(229, 231, 235);
-    border-top-left-radius: 8px;
-    border-top-right-radius: 8px;
-    border-top-style: solid;
-    border-top-width: 0px;
+    border: 0;
+    border-color: rgb(229, 231, 235);
+    border-radius: 8px;
+    border-style: solid;
+    border-width: 0;
     box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px,
       rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
       rgba(0, 0, 0, 0.1) 0px 2px 4px -2px;
@@ -171,26 +115,14 @@
     max-width: 512px;
     tab-size: 4;
     text-size-adjust: 100%;
-    width: 384px;
+    background-color: rgb(255, 255, 255);
   }
 
   & .chat-title {
     align-items: center;
     background-color: rgb(59, 130, 246);
-    border-bottom-color: rgb(229, 231, 235);
-    border-bottom-style: solid;
-    border-bottom-width: 1px;
-    border-left-color: rgb(229, 231, 235);
-    border-left-style: solid;
-    border-left-width: 0px;
-    border-right-color: rgb(229, 231, 235);
-    border-right-style: solid;
-    border-right-width: 0px;
-    border-top-color: rgb(229, 231, 235);
-    border-top-left-radius: 8px;
-    border-top-right-radius: 8px;
-    border-top-style: solid;
-    border-top-width: 0px;
+    border: 1px solid rgb(229, 231, 235);
+    border-radius: 8px;
     box-sizing: border-box;
     color: rgb(255, 255, 255);
     display: flex;
@@ -203,24 +135,10 @@
     height: 49px;
     justify-content: space-between;
     line-height: 24px;
-    padding-bottom: 8px;
-    padding-left: 8px;
-    padding-right: 8px;
-    padding-top: 8px;
+    padding: 8px;
 
     & p.chat-ptitle {
-      border-bottom-color: rgb(229, 231, 235);
-      border-bottom-style: solid;
-      border-bottom-width: 0px;
-      border-left-color: rgb(229, 231, 235);
-      border-left-style: solid;
-      border-left-width: 0px;
-      border-right-color: rgb(229, 231, 235);
-      border-right-style: solid;
-      border-right-width: 0px;
-      border-top-color: rgb(229, 231, 235);
-      border-top-style: solid;
-      border-top-width: 0px;
+      border: 0;
       box-sizing: border-box;
       color: rgb(255, 255, 255);
       display: inline-flex;
@@ -246,18 +164,7 @@
     }
 
     & svg {
-      border-bottom-color: rgb(229, 231, 235);
-      border-bottom-style: solid;
-      border-bottom-width: 0px;
-      border-left-color: rgb(229, 231, 235);
-      border-left-style: solid;
-      border-left-width: 0px;
-      border-right-color: rgb(229, 231, 235);
-      border-right-style: solid;
-      border-right-width: 0px;
-      border-top-color: rgb(229, 231, 235);
-      border-top-style: solid;
-      border-top-width: 0px;
+      border: 0;
       box-sizing: border-box;
       color: rgb(209, 213, 219);
       cursor: pointer;
@@ -282,20 +189,9 @@
   }
 
   & #chatbox {
-    border-bottom-color: rgb(229, 231, 235);
-    border-bottom-style: solid;
-    border-bottom-width: 0px;
-    border-left-color: rgb(229, 231, 235);
-    border-left-style: solid;
-    border-left-width: 0px;
-    border-right-color: rgb(229, 231, 235);
-    border-right-style: solid;
-    border-right-width: 0px;
-    border-top-color: rgb(229, 231, 235);
-    border-top-style: solid;
-    border-top-width: 0px;
+    border: 0;
     box-sizing: border-box;
-    display: block;
+    color: rgb(229, 231, 235);
     font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
       'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif,
       'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol',
@@ -305,33 +201,16 @@
     height: 320px;
     line-height: 24px;
     overflow-y: auto;
-    padding-bottom: 16px;
-    padding-left: 16px;
-    padding-right: 16px;
-    padding-top: 16px;
+    padding: 16px;
     tab-size: 4;
     text-size-adjust: 100%;
-    width: 384px;
 
     & .user-chat {
       & p {
-        background-color: rgb(229, 231, 235);
-        border-bottom-color: rgb(229, 231, 235);
-        border-bottom-left-radius: 8px;
-        border-bottom-right-radius: 8px;
-        border-bottom-style: solid;
-        border-bottom-width: 0px;
-        border-left-color: rgb(229, 231, 235);
-        border-left-style: solid;
-        border-left-width: 0px;
-        border-right-color: rgb(229, 231, 235);
-        border-right-style: solid;
-        border-right-width: 0px;
-        border-top-color: rgb(229, 231, 235);
-        border-top-left-radius: 8px;
-        border-top-right-radius: 8px;
-        border-top-style: solid;
-        border-top-width: 0px;
+        border-color: rgb(229, 231, 235);
+        border-style: solid;
+        border-width: 0;
+        border-radius: 8px;
         box-sizing: border-box;
         color: rgb(55, 65, 81);
         display: inline-block;
@@ -343,36 +222,17 @@
         font-variation-settings: normal;
         height: 40px;
         line-height: 24px;
-        margin-block-end: 0px;
-        margin-block-start: 0px;
-        margin-bottom: 0px;
-        margin-inline-end: 0px;
-        margin-inline-start: 0px;
-        margin-left: 0px;
-        margin-right: 0px;
-        margin-top: 0px;
-        padding-bottom: 8px;
-        padding-left: 16px;
-        padding-right: 16px;
-        padding-top: 8px;
+        margin: 0;
+        padding: 8px 16px;
         tab-size: 4;
         text-size-adjust: 100%;
       }
     }
 
     & .friend-chat {
-      border-bottom-color: rgb(229, 231, 235);
-      border-bottom-style: solid;
-      border-bottom-width: 0px;
-      border-left-color: rgb(229, 231, 235);
-      border-left-style: solid;
-      border-left-width: 0px;
-      border-right-color: rgb(229, 231, 235);
-      border-right-style: solid;
-      border-right-width: 0px;
-      border-top-color: rgb(229, 231, 235);
-      border-top-style: solid;
-      border-top-width: 0px;
+      border-color: rgb(229, 231, 235);
+      border-style: solid;
+      border-width: 0;
       box-sizing: border-box;
       display: block;
       font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
@@ -389,23 +249,10 @@
       text-size-adjust: 100%;
 
       & p {
-        background-color: rgb(59, 130, 246);
-        border-bottom-color: rgb(229, 231, 235);
-        border-bottom-left-radius: 8px;
-        border-bottom-right-radius: 8px;
-        border-bottom-style: solid;
-        border-bottom-width: 0px;
-        border-left-color: rgb(229, 231, 235);
-        border-left-style: solid;
-        border-left-width: 0px;
-        border-right-color: rgb(229, 231, 235);
-        border-right-style: solid;
-        border-right-width: 0px;
-        border-top-color: rgb(229, 231, 235);
-        border-top-left-radius: 8px;
-        border-top-right-radius: 8px;
-        border-top-style: solid;
-        border-top-width: 0px;
+        border-color: rgb(229, 231, 235);
+        border-style: solid;
+        border-width: 0;
+        border-radius: 8px;
         box-sizing: border-box;
         color: rgb(255, 255, 255);
         display: inline-block;
@@ -417,20 +264,11 @@
         font-variation-settings: normal;
         height: 40px;
         line-height: 24px;
-        margin-block-end: 0px;
-        margin-block-start: 0px;
-        margin-bottom: 0px;
-        margin-inline-end: 0px;
-        margin-inline-start: 0px;
-        margin-left: 0px;
-        margin-right: 0px;
-        margin-top: 0px;
-        padding-bottom: 8px;
-        padding-left: 16px;
-        padding-right: 16px;
-        padding-top: 8px;
+        margin: 0;
+        padding: 8px 16px;
         tab-size: 4;
         text-align: right;
+        background-color: rgb(59, 130, 246);
       }
     }
   }
@@ -453,7 +291,6 @@
     padding: 16px;
     tab-size: 4;
     text-size-adjust: 100%;
-
     flex: 1;
 
     & .text-input {
