@@ -1,15 +1,12 @@
 {
   "homepage": "https://juliotorresmoreno.github.io",
-  "name": "@onnasoft/chatbot-ui",
-  "version": "0.0.5",
   "description": "",
-  "main": "index.js",
+  "main": "index.jsx",
   "scripts": {
     "start": "webpack-dev-server --history-api-fallback --mode=development --open",
     "serve": "npx serve dist -s -p 9000",
-    "prepare": "npm init --scope=@onnasoft",
-    "publish": "npm publish --access public",
     "watch": "webpack --mode 'development' --watch",
+    "prepare": "tsc && cp src/Chat.css lib/",
     "build": "webpack",
     "lint": "standard",
     "lint:fix": "standard --fix",
@@ -67,5 +64,7 @@
     "extends": [
       "./node_modules/standard/eslintrc.json"
     ]
-  }
+  },
+  "version": "0.0.20",
+  "name": "@onnasoft/chatbot-ui"
 }
