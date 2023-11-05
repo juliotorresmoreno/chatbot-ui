@@ -65,6 +65,6 @@
       "./node_modules/standard/eslintrc.json"
     ]
   },
-  "version": "0.0.20",
+  "version": "0.0.21",
   "name": "@onnasoft/chatbot-ui"
 }
