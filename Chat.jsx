@@ -3,23 +3,12 @@ import React, { useRef, useState } from 'react'
 import { CSSTransition } from 'react-transition-group'
 import './Chat.css'
 
-export interface ChatProps {
-  title: string
-  icon: React.ReactElement
-  userId: string
-  messages: Message[]
-  onChange: (value: string) => void
-  value: string
-  onSend: () => void
-}
-
-export interface Message {
-  id: string
-  content: string
-  fromId: string
-}
-
-const Chat: React.FC<ChatProps> = (props) => {
+/**
+ *
+ * @type {React.FC<ChatProps>}
+ * @returns
+ */
+const Chat = (props) => {
   const { icon, messages, title, userId, onChange, value, onSend } = props
   const [isOpen, setIsOpen] = useState(false)
   const chatboxRef = useRef(null)
@@ -27,7 +16,10 @@ const Chat: React.FC<ChatProps> = (props) => {
   function toggleChatbox() {
     setIsOpen(!isOpen)
     if (chatboxRef.current === null) return
-    const ref: HTMLDivElement = chatboxRef.current
+    /**
+     * @type {HTMLDivElement}
+     */
+    const ref = chatboxRef.current
     window.requestAnimationFrame(() => {
       ref.scrollTop = ref.scrollHeight
     })

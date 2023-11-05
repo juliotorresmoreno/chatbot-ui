@@ -10,14 +10,14 @@ const Dotenv = require('dotenv-webpack')
  * @type {WebpackOptionsNormalized}
  */
 const configuration = {
-  entry: path.resolve(__dirname, './src/index.tsx'),
+  entry: path.resolve(__dirname, './index.jsx'),
   output: {
     filename: 'bundle.js',
     publicPath: '/',
   },
   plugins: [
     new HTMLWebpackPlugin({
-      template: 'src/index.html',
+      template: 'index.html',
     }),
     new Dotenv(),
   ],

@@ -21,7 +21,10 @@ const icon = (
   </svg>
 )
 
-const example: Partial<ChatProps> = {
+/**
+ * @type {Partial<ChatProps>}
+ */
+const example = {
   userId: 'system',
   title: 'Lokendo',
   messages: [
@@ -44,11 +47,16 @@ export default function App() {
   const onSend = () => {
     alert('Test')
   }
+
+  /**
+   * @type {ChatProps}
+   */
   const payload = {
     ...example,
     value,
     onChange: setValue,
     onSend,
-  } as ChatProps
+  }
+  
   return <Chat {...payload} />
 }

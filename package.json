@@ -1,14 +1,14 @@
 {
   "homepage": "https://juliotorresmoreno.github.io",
-  "name": "chatbot-ui",
-  "version": "0.0.1",
+  "name": "@onnasoft/chatbot-ui",
+  "version": "0.0.3",
   "description": "",
   "main": "index.js",
   "scripts": {
     "start": "webpack-dev-server --history-api-fallback --mode=development --open",
     "serve": "npx serve dist -s -p 9000",
     "watch": "webpack --mode 'development' --watch",
-    "build": "tsc",
+    "build": "webpack",
     "lint": "standard",
     "lint:fix": "standard --fix",
     "test": "cypress open"
