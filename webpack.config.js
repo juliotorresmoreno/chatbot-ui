@@ -10,7 +10,7 @@ const Dotenv = require('dotenv-webpack')
  * @type {WebpackOptionsNormalized}
  */
 const configuration = {
-  entry: path.resolve(__dirname, './index.jsx'),
+  entry: path.resolve(__dirname, './src/main.jsx'),
   output: {
     filename: 'bundle.js',
     publicPath: '/',

@@ -1,14 +1,24 @@
 import classNames from 'classnames'
 import React, { useRef, useState } from 'react'
 import { CSSTransition } from 'react-transition-group'
-import './Chat.css'
 
-/**
- *
- * @type {React.FC<ChatProps>}
- * @returns
- */
-const Chat = (props) => {
+export interface ChatProps {
+  title: string
+  icon: React.ReactElement
+  userId: string
+  messages: Message[]
+  onChange: (value: string) => void
+  value: string
+  onSend: () => void
+}
+
+export interface Message {
+  id: string
+  content: string
+  fromId: string
+}
+
+const Chat: React.FC<ChatProps> = (props) => {
   const { icon, messages, title, userId, onChange, value, onSend } = props
   const [isOpen, setIsOpen] = useState(false)
   const chatboxRef = useRef(null)
@@ -16,10 +26,8 @@ const Chat = (props) => {
   function toggleChatbox() {
     setIsOpen(!isOpen)
     if (chatboxRef.current === null) return
-    /**
-     * @type {HTMLDivElement}
-     */
-    const ref = chatboxRef.current
+
+    const ref: HTMLDivElement = chatboxRef.current
     window.requestAnimationFrame(() => {
       ref.scrollTop = ref.scrollHeight
     })
@@ -122,13 +130,29 @@ const Chat = (props) => {
                   />
                   <button
                     id="send-button"
+                    disabled={!value}
                     onClick={(evt) => {
                       evt.preventDefault()
                       sendEvent()
                     }}
                     className="bg-blue-500 text-white px-4 py-2 rounded-r-md hover:bg-blue-600 transition duration-300"
                   >
-                    Send
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      className="icon icon-tabler icon-tabler-send"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      strokeWidth="2"
+                      stroke="currentColor"
+                      fill="none"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    >
+                      <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                      <path d="M10 14l11 -11"></path>
+                      <path d="M21 3l-6.5 18a.55 .55 0 0 1 -1 0l-3.5 -7l-7 -3.5a.55 .55 0 0 1 0 -1l18 -6.5"></path>
+                    </svg>
                   </button>
                 </div>
               </div>

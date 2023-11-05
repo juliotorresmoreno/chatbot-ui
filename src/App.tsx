@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import Chat, { ChatProps } from './Chat'
+import './Chat.css'
 
 const icon = (
   <svg
@@ -21,10 +22,7 @@ const icon = (
   </svg>
 )
 
-/**
- * @type {Partial<ChatProps>}
- */
-const example = {
+const example: Partial<ChatProps> = {
   userId: 'system',
   title: 'Lokendo',
   messages: [
@@ -48,15 +46,12 @@ export default function App() {
     alert('Test')
   }
 
-  /**
-   * @type {ChatProps}
-   */
   const payload = {
     ...example,
     value,
     onChange: setValue,
     onSend,
-  }
-  
+  } as ChatProps
+
   return <Chat {...payload} />
 }

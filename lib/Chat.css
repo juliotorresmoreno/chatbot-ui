@@ -40,7 +40,7 @@
     font-feature-settings: normal;
     font-kerning: auto;
     font-optical-sizing: auto;
-    font-size: 16px;
+    font-size: 1rem;
     font-stretch: 100%;
     font-style: normal;
     font-variant: normal;
@@ -65,6 +65,7 @@
   }
 
   & #chat-container {
+    background-color: white;
     box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
     border-color: rgb(229, 231, 235);
     border-style: solid;
@@ -120,11 +121,10 @@
 
   & .chat-title {
     align-items: center;
-    background-color: rgb(59, 130, 246);
+    background-color: unset;
     border: 1px solid rgb(229, 231, 235);
     border-radius: 8px;
     box-sizing: border-box;
-    color: rgb(255, 255, 255);
     display: flex;
     font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
       'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif,
@@ -140,14 +140,13 @@
     & p.chat-ptitle {
       border: 0;
       box-sizing: border-box;
-      color: rgb(255, 255, 255);
       display: inline-flex;
       font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
         'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif,
         'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol',
         'Noto Color Emoji';
       font-feature-settings: normal;
-      font-size: 18px;
+      font-size: 1rem;
       font-variation-settings: normal;
       font-weight: 600;
       height: 28px;
@@ -155,6 +154,7 @@
     }
 
     & .close-chat {
+      background-color: unset;
       cursor: pointer;
       height: 32px;
       margin: 0;
@@ -166,7 +166,7 @@
     & svg {
       border: 0;
       box-sizing: border-box;
-      color: rgb(209, 213, 219);
+      color: #000;
       cursor: pointer;
       display: block;
       fill: none;
@@ -177,7 +177,7 @@
       font-feature-settings: normal;
       font-kerning: auto;
       font-optical-sizing: auto;
-      font-size: 16px;
+      font-size: 1rem;
       font-stretch: 100%;
       font-style: normal;
       font-variant-alternates: normal;
@@ -212,7 +212,7 @@
         border-width: 0;
         border-radius: 8px;
         box-sizing: border-box;
-        color: rgb(55, 65, 81);
+        color: rgb(255, 255, 255);
         display: inline-block;
         font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
           'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif,
@@ -225,7 +225,8 @@
         margin: 0;
         padding: 8px 16px;
         tab-size: 4;
-        text-size-adjust: 100%;
+        text-align: right;
+        background-color: #82c0a9;
       }
     }
 
@@ -321,27 +322,47 @@
         'Noto Color Emoji';
     }
 
-    & button {
-      align-items: flex-start;
+    & #send-button {
+      align-items: center;
       appearance: button;
-      background-color: rgb(59, 130, 246);
+      background-color: rgba(0, 0, 0, 0);
       background-image: none;
-      border-color: rgb(229, 231, 235);
+      border-bottom-color: rgb(228, 228, 231);
+      border-bottom-left-radius: 6px;
       border-bottom-right-radius: 6px;
-      border-style: solid;
+      border-bottom-style: solid;
+      border-bottom-width: 1px;
+      border-image-outset: 0;
+      border-image-repeat: stretch;
+      border-image-slice: 100%;
+      border-image-source: none;
+      border-image-width: 1;
+      border-left-color: rgb(228, 228, 231);
+      border-left-style: solid;
+      border-left-width: 1px;
+      border-right-color: rgb(228, 228, 231);
+      border-right-style: solid;
+      border-right-width: 1px;
+      border-top-color: rgb(228, 228, 231);
+      border-top-left-radius: 6px;
       border-top-right-radius: 6px;
+      border-top-style: solid;
+      border-top-width: 1px;
+      box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px,
+        rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;
       box-sizing: border-box;
-      color: rgb(255, 255, 255);
+      color: rgb(9, 9, 11);
+      color-scheme: light;
       cursor: pointer;
-      display: block;
-      font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
-        'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif,
-        'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol',
-        'Noto Color Emoji';
+      display: flex;
+      font-family: __Inter_a64ecd, __Inter_Fallback_a64ecd, ui-sans-serif,
+        system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+        'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji',
+        'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
       font-feature-settings: normal;
       font-kerning: auto;
       font-optical-sizing: auto;
-      font-size: 16px;
+      font-size: 1rem;
       font-stretch: 100%;
       font-style: normal;
       font-variant-alternates: normal;
@@ -351,10 +372,10 @@
       font-variant-numeric: normal;
       font-variant-position: normal;
       font-variation-settings: normal;
-      font-weight: 400;
-      height: 42px;
+      font-weight: 500;
+      justify-content: center;
       letter-spacing: normal;
-      line-height: 24px;
+      line-height: 28px;
       margin-bottom: 0px;
       margin-left: 0px;
       margin-right: 0px;
@@ -369,23 +390,26 @@
       text-rendering: auto;
       text-shadow: none;
       text-transform: none;
-      transition-duration: 0.3s;
+      text-wrap: nowrap;
+      transition-duration: 0.15s;
       transition-property: color, background-color, border-color,
-        text-decoration-color, fill, stroke, opacity, box-shadow, transform,
-        filter, backdrop-filter, -webkit-backdrop-filter;
+        text-decoration-color, fill, stroke;
       transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+      white-space-collapse: collapse;
       width: min-content;
       word-spacing: 0px;
+      -webkit-font-smoothing: antialiased;
+      height: initial;
+
+      & svg {
+      }
     }
     & .text-input:focus {
       --tw-ring-opacity: 1;
-      --tw-ring-color: rgb(59 130 246 / var(--tw-ring-opacity));
-      --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0
-        var(--tw-ring-offset-width) var(--tw-ring-offset-color);
-      --tw-ring-shadow: var(--tw-ring-inset) 0 0 0
-        calc(2px + var(--tw-ring-offset-width)) var(--tw-ring-color);
-      box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow),
-        var(--tw-shadow, 0 0 #0000);
+      --tw-ring-color: unset;
+      --tw-ring-offset-shadow: unset
+      --tw-ring-shadow: unset;
+      box-shadow: unset;
       outline: 2px solid transparent;
       outline-offset: 2px;
     }
