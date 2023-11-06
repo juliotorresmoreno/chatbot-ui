@@ -23,7 +23,7 @@ const Chat: React.FC<ChatProps> = (props) => {
   const [isOpen, setIsOpen] = useState(false)
   const chatboxRef = useRef(null)
 
-  function toggleChatbox() {
+  const toggleChatbox = () => {
     setIsOpen(!isOpen)
     if (chatboxRef.current === null) return
 
@@ -34,7 +34,7 @@ const Chat: React.FC<ChatProps> = (props) => {
   }
 
   const defaultStyle = {
-    transition: `opacity 300ms ease-in-out`,
+    transition: 'opacity 300ms ease-in-out',
     opacity: 0,
   }
   const transitionStyles = {
